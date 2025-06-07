@@ -58,10 +58,11 @@ function ProfilePicture() {
 
       <motion.div
         className="profile-picture"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, x: 500  }}
           whileInView={{ opacity: 1 }}
+          animate={{x:10}}
           transition={{ duration: 0.8 }}
-          viewport={{ margin: "50px" }}
+          viewport={{ once: false, amount: 0.3}}
       >
         <img className="card" src="pfp.jpg" alt="Profile" />
       </motion.div>

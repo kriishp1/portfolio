@@ -7,8 +7,8 @@ function Projects() {
             <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            viewport={{ margin: "-200px", ease: [0.42, 0, 1, 1] }}>
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false, amount: 0.6 , ease: [0.42, 0, 1, 1] }}>
             <motion.div>
                 <p className='projects'>Projects</p>
             </motion.div>
