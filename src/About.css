@@ -1,0 +1,82 @@
+.description-container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading{
+  position: relative;
+  text-align: left;
+  left: 15%;
+  background: linear-gradient(to right, hsl(48, 100%, 85%), hsl(45, 86%, 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 200px;
+}
+
+.sub-heading{
+  position: relative;
+  left: 15%;
+  color: white;
+  width: 100%;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.description{
+  position: relative;
+  left: 15%;
+  margin-top: 10px;
+  color: white;
+  width: 80%;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.dog-pic, .lego-pic, .hiking-pic {
+  height: auto;
+  border-radius: 10%;
+  border: 2px solid hsl(54, 58%, 62%);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.dog-pic{
+  position: relative;
+  left: 15%;
+  width: 12vw;
+  top: 10px;
+}
+.lego-pic{
+  position: relative;
+  left: 20%;
+  width: 25vw;
+  top: 10px;
+}
+.hiking-pic{
+  position: relative;
+  left: 25%;
+  top: 10px;
+  width: 12vw;
+}
+
+
+.location, .email{
+  position: relative;
+  top: 20px;
+  left: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  color: white;
+}

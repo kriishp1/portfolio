@@ -1,0 +1,48 @@
+.about-wrapper {
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container-about-me-msg,
+.container-about-me-name,
+.container-about-me-bio,
+.container-contact-button {
+  position: relative;
+  right: 10%;
+  width: 46%; /* All same width for alignment */
+  margin-bottom: 10px;
+}
+
+
+.about-me-msg{
+  position: relative;
+  top: 30px;
+  right: 5%;
+  text-align: left;
+  background: linear-gradient(to right, hsl(48, 100%, 85%), hsl(45, 86%, 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-me-name{
+  position: relative;
+  top: -100px;
+  right: 5%;
+  text-align: left;
+  color: white;
+}
+
+.about-me-bio{
+  position: relative;
+  top: -40px;
+  right: 5%;
+  font-size: 1.1rem;
+  text-align: left;
+  color: white;
+}

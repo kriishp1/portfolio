@@ -1,0 +1,77 @@
+.icon {
+  height: 50px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.icon:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 51%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  color: hsl(0, 0%, 100%);
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icons{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  z-index: 900; 
+}
+
+.nav-about,
+.nav-portfolio,
+.nav-name {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.nav-about:hover,
+.nav-portfolio:hover,
+.nav-name:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: hsl(0, 0%, 90%);
+
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-name, .nav-icons {
+    margin-bottom: 10px;
+  }
+}
