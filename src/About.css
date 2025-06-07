@@ -80,3 +80,68 @@
   justify-content: left;
   color: white;
 }
+
+
+@media (max-width: 768px) {
+  .heading,
+  .sub-heading,
+  .description,
+  .location,
+  .email {
+    left: 5% !important; /* reduce left offset on smaller screens */
+    width: 90% !important;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
+
+  .sub-heading {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .pic-container {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .dog-pic,
+  .lego-pic,
+  .hiking-pic {
+    position: static;
+    width: 40vw; /* scale images to fit mobile better */
+    margin-bottom: 10px;
+  }
+
+  .location,
+  .email {
+    top: 10px;
+    justify-content: center;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 400px) {
+  .dog-pic,
+  .lego-pic,
+  .hiking-pic {
+    width: 80vw;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
