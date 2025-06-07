@@ -8,7 +8,7 @@ function Skills() {
             <motion.div
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1}}
-            transition={{ duration: 2, ease: 'easeIn' }}
+            transition={{ duration: 1, ease: 'easeIn' }}
             viewport={{ margin: "-300px" }}>
             <h1 className='skills-heading'>Skills</h1>
             <div className="scroller">
