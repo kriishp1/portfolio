@@ -7,7 +7,7 @@ function Projects() {
             <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ margin: "-200px", ease: [0.42, 0, 1, 1] }}>
             <motion.div>
                 <p className='projects'>Projects</p>
