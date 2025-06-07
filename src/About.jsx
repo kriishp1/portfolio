@@ -8,7 +8,7 @@ function About({ heading, title, bio, location, email}) {
         <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2, ease:  [0.42, 0, 1, 1] }}
+            transition={{ duration: 1, ease:  [0.42, 0, 1, 1] }}
             viewport={{ margin: "-370px" }}>
             <motion.div className='description-container'>
                     <h1 className='heading'>{heading}</h1>
