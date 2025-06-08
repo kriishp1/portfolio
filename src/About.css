@@ -1,98 +1,10 @@
-.description-container{
+.description-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  
-}
-
-.description-container, .pic-container {
   z-index: 10;
   position: relative;
-}
-
-.heading{
-  position: relative;
-  text-align: left;
-  left: 15%;
-  background: linear-gradient(to right, hsl(48, 100%, 85%), hsl(45, 86%, 58%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 100%;
-  font-size: 2rem;
-  margin-top: 200px;
-}
-
-.sub-heading{
-  position: relative;
-  left: 15%;
-  color: white;
-  width: 100%;
-  text-align: left;
-  font-size: 1.7rem;
-}
-
-.description{
-  position: relative;
-  left: 15%;
-  margin-top: 10px;
-  color: white;
-  width: 80%;
-  text-align: left;
-  font-size: 1.1rem;
-}
-
-.pic-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-
-.dog-pic, .lego-pic, .hiking-pic {
-  height: auto;
-  border-radius: 10%;
-  border: 2px solid hsl(54, 58%, 62%);
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.dog-pic{
-  position: relative;
-  left: 15%;
-  width: 12vw;
-  top: 10px;
-}
-.lego-pic{
-  position: relative;
-  left: 20%;
-  width: 25vw;
-  top: 10px;
-}
-.hiking-pic{
-  position: relative;
-  left: 25%;
-  top: 10px;
-  width: 12vw;
-}
-
-
-.location, .email{
-  position: relative;
-  top: 20px;
-  left: 15%;
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  color: white;
-}
-
-
-.description-container {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .heading {
@@ -107,26 +19,81 @@
   margin-top: 200px;
 }
 
+.sub-heading {
+  position: relative;
+  left: 15%;
+  color: white;
+  width: 100%;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.description {
+  position: relative;
+  left: 15%;
+  margin-top: 10px;
+  color: white;
+  width: 80%;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
 .pic-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: flex-start;
+  z-index: 10;
+  position: relative;
 }
 
 .dog-pic, .lego-pic, .hiking-pic {
+  height: auto;
   border-radius: 10%;
   border: 2px solid hsl(54, 58%, 62%);
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
 
+.dog-pic {
+  position: relative;
+  left: 15%;
+  width: 12vw;
+  top: 10px;
+}
+
+.lego-pic {
+  position: relative;
+  left: 20%;
+  width: 25vw;
+  top: 10px;
+}
+
+.hiking-pic {
+  position: relative;
+  left: 25%;
+  width: 12vw;
+  top: 10px;
+}
+
+.location, .email {
+  position: relative;
+  top: 20px;
+  left: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
 
 
 @media (max-width: 768px) {
   .heading, .sub-heading, .description, .location, .email {
-    left: 5% !important; 
+    left: 5% !important;
     font-size: 1.2rem;
-    width: 90% !important; 
+    width: 90% !important;
     text-align: left;
+    position: relative !important;
   }
 
   .heading {
@@ -143,9 +110,11 @@
   }
 
   .dog-pic, .lego-pic, .hiking-pic {
-    left: 0; 
-    width: 80vw ; 
+    position: relative !important;
+    left: 0 !important;
+    width: 80vw !important;
     margin-bottom: 20px;
+    top: 0 !important;
   }
 
   .pic-container {

@@ -5,10 +5,11 @@ function About({ heading, title, bio, location, email}) {
     return (
 
         <>
-        <motion.div
-            initial={false}
-            viewport={{ once: false }} 
-            transition={{ duration: 0.8, ease: [0.42, 0, 1, 1] }}>
+            <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.3 }} 
+            transition={{ duration: 0.8 }}>
             <motion.div className='description-container'>
                     <h1 className='heading'>{heading}</h1>
                     <h2 className='sub-heading'>{title}</h2>
