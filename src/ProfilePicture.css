@@ -1,18 +1,32 @@
 .profile-picture {
   display: flex;
-  justify-content: flex-end;
-  align-items: center; /* vertical alignment */
-  height: 350px;
-  padding-right: 4rem; /* optional spacing from right */
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  padding-left: 50rem;
+  padding-top: 2rem;
 }
+
 .profile-picture .card {
   position: relative;
-  left: 5%;
   width: 20vw;
-  height: auto;
-  top: 200px;
+  height: auto;  
   border-radius: 50%;
   border: 2px solid hsl(54, 58%, 62%);
   box-shadow: 0 0 40px 6px hsl(54, 58%, 62%);
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .profile-picture {
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  .profile-picture .card {
+    width: 20vw;
+  }
 }

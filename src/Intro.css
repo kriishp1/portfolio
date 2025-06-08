@@ -15,6 +15,7 @@
 .container-contact-button {
   position: relative;
   right: 10%;
+  top: 350px;
   width: 46%; /* All same width for alignment */
   margin-bottom: 10px;
 }
@@ -45,4 +46,21 @@
   font-size: 1.1rem;
   text-align: left;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .container-about-me-msg,
+  .container-about-me-name,
+  .container-about-me-bio,
+  .container-contact-button {
+    justify-content: center;
+    align-items: center;
+    margin-left: 125px;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .profile-picture .card {
+    width: 20vw;
+  }
 }
