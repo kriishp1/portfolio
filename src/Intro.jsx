@@ -9,7 +9,7 @@ function Intro({msg, name, bio}) {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.9 }}>
+                viewport={{ once: false, amount: 0.5 }}>
             <motion.div className='container-about-me-msg'
                 initial={{y: -2400, }}
                 animate={{y: 4, }}
