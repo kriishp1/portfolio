@@ -1,58 +1,79 @@
-.container-projects{
+.container-projects {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 300px; 
+  min-height: 300px;
 }
 
-.projects{
+.projects {
   margin-top: 300px;
   background: linear-gradient(to right, hsl(48, 100%, 85%), hsl(45, 86%, 58%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
-  font-family: 'Roboto';
-  font-weight:bold;
+  font-family: "Roboto";
+  font-weight: bold;
 }
 
-.project-frame{
+.project-frame {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.05); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);    
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   max-width: 400px;
-  margin: auto; 
-  margin-bottom: 300px;     
+  margin: auto;
+  margin-bottom: 300px;
   padding: 30px;
   color: white;
   text-align: center;
 }
 
-.project-img{
+.project-img {
   border: 2px solid rgb(7, 7, 7);
-  border-radius: 20px;
-  height: auto;
+  border-radius: 10px;
+  height: 200px;
   width: 300px;
+  object-fit: contain;
 }
 
-.project-title{
+.project-title {
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
-
 }
 
-.project-text, .stack{
+.project-text,
+.stack {
   font-size: 1rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   transition: transform 0.5s;
 }
 
 .stack:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-frame {
+  flex: 1;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
